@@ -14,7 +14,6 @@ from nltk.stem import PorterStemmer
 # tokenizing - word tokens, chopping a document up into individual words or sentence tokens is chopping up into sentences
 # lexicon - is the vocabulary of a person e.g. stokebroker or medical doctor.  Can also be vocabulary of a language e.g.American English
 # corpora - is a body of text e.g. journals, blog post, news article
-# 
 
 example_text = "Tokenizing, even in English, is a difficult problem. It's even harder in other languages - such as Chinese!"
 
@@ -43,3 +42,6 @@ print (tokens_noStopWords)
 # Stemming is merging words of similar origin and meaning.  e.g. minimise, minimal, minimum in to single token
 ps = PorterStemmer()
 example_text2 = ["hypothetically","destructiveness","adjustment"]
+
+for words in example_text2:
+    print(ps.stem(words))
